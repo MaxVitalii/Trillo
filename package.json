@@ -10,7 +10,7 @@
     "compile:sass": "node-sass sass/main.scss css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
     "comress:css": "node-sass css/style.prefix.css css/style.css --output-style comressed",
-    "build:css": "npm-run-all compile:sass concat:css prefix:css comress:css"
+    "build:css": "npm-run-all compile:sass prefix:css comress:css"
   },
   "repository": {
     "type": "git",
